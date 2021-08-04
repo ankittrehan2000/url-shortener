@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Shrtnr</h1>
+    <form method="POST" action="/generate">
+      <div class="form-group">
+        <label for="urlField" class="text-left my-3 h4">URL you would like to shorten</label>
+        <input name="urlField" type="url" class="form-control" id="urlField" placeholder="https://localhost:3000">
+      </div>
+      <div class="form-group">
+        <label for="slug" class="text-left my-3 h4">Slug you would like to use</label>
+        <input name="slug" type="text" class="form-control" id="slug" placeholder="shrt">
+      </div>
+      <button type="submit" class="btn btn-primary my-4">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
